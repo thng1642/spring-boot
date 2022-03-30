@@ -1,0 +1,61 @@
+.container-login, .container-sign-up {
+    // border: 1px solid #111;
+    margin-top: 100px;
+    position: relative;
+    width: calc(100% / 3);
+    // height: 600px;
+    left: 50%;
+    transform: translateX(-50%);
+    display: flex;
+    flex-direction: column;
+    flex-wrap: nowrap;
+    align-items: center;
+    background-color: #F9F9F9;
+
+    p {
+        text-align: center;
+        padding: 10px 40px;
+        font-size: 1.1rem;
+
+        a {
+            color: rgb(8, 141, 48);
+            text-decoration: none;
+            font-weight: 700;
+        }
+    }
+    form {
+        width: 80%;
+        position: relative;
+        display: flex;
+        flex-direction: column;
+
+        label {
+            font-weight: 600;
+            margin-bottom: 5px;
+            
+        }
+        input {
+            height: 40px;
+            margin-bottom: 20px;
+        }
+        input[type=submit] {
+            margin-top: 20px;
+            border: none;
+            text-transform: uppercase;
+            font-weight: 600;
+            background-color: #13283f;
+            color: rgb(255, 255, 255);
+            letter-spacing: 1.2px;
+            transition: all 0.5s;
+        }
+        input[type=submit]:hover {
+            cursor: pointer;
+            background-color: rgb(10, 96, 153);
+            
+        }
+        // padding: 20px 40px;
+        // #tb_account {
+        //     width: 80%;
+        // }
+    }
+}

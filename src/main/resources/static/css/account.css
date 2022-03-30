@@ -1,0 +1,84 @@
+.nav-header {
+  position: relative;
+  width: 100%;
+  height: 60px;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: nowrap;
+  background-color: #FFE178;
+  align-items: center;
+}
+.nav-header div {
+  position: relative;
+  width: 33.3333333333%;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.nav-header div p {
+  margin-left: 10px;
+  font-size: 1.2rem;
+}
+.nav-header div i {
+  font-size: 1.5rem;
+}
+
+.container-login {
+  margin-top: 100px;
+  position: relative;
+  width: 33.3333333333%;
+  left: 50%;
+  transform: translateX(-50%);
+  display: flex;
+  flex-direction: column;
+  flex-wrap: nowrap;
+  align-items: center;
+  background-color: #F9F9F9;
+}
+.container-login p {
+  text-align: center;
+  padding: 10px 40px;
+  font-size: 1.1rem;
+}
+.container-login p a {
+  color: #088d30;
+  text-decoration: none;
+  font-weight: 700;
+}
+.container-login form {
+  width: 80%;
+  position: relative;
+  display: flex;
+  flex-direction: column;
+}
+.container-login form label {
+  font-weight: 600;
+  margin-bottom: 5px;
+}
+.container-login form input {
+  height: 40px;
+  margin-bottom: 20px;
+}
+.container-login form input[type=submit] {
+  margin-top: 20px;
+  border: none;
+  text-transform: uppercase;
+  font-weight: 600;
+  background-color: #13283f;
+  color: white;
+  letter-spacing: 1.2px;
+  transition: all 0.5s;
+}
+.container-login form input[type=submit]:hover {
+  cursor: pointer;
+  background-color: #0a6099;
+}
+
+body {
+  box-sizing: border-box;
+  font-size: 16px;
+  margin: 0;
+}
+
+/*# sourceMappingURL=account.css.map */

@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="https://www.thymeleaf.org">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <script src="https://kit.fontawesome.com/dd9a768261.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" th:href="@{/css/account.css}" href="../static/css/account.css">
+    <title>Tài khoản</title>
+</head>
+<body>
+
+    <div class="nav-header">
+        <div class="ship-truck">
+            <i class="fa-solid fa-truck-fast"></i>
+            <p>Miễn phí giao hàng cho đơn hàng 700K</p>
+        </div>
+        
+        <div class="return-policy">
+            <i class="fa-solid fa-arrow-right-arrow-left"></i>
+            <p>15 Ngày đổi trả</p>
+        </div>
+
+        <div class="pay-loan">
+            <i class="fa-solid fa-hand-holding-dollar"></i>
+            <p>Trả góp 0%</p>
+        </div>
+    </div>
+    
+    <div class="container-login">
+        <h1 class="title_login">Đăng nhập</h1>
+        <form action="#" method="post" th:action="@{/login}" th:object="${account}">
+
+            <label for="tb_account">Địa chỉ email</label>
+            <input type="email" id="tb_account" th:name="username" required>
+
+            <label for="tb_password">Mật khẩu</label>
+            <input type="password"  id="tb_password" th:name="pass" required>
+
+            <input type="submit" value="Đăng nhập">
+        </form>
+
+        <p>Bằng cách tạo một tài khoản với cửa hàng của chúng tôi, bạn có thể thao tác quy trình thanh toán nhanh hơn, lưu trữ nhiều địa chỉ giao hàng, xem và theo dõi các đơn hàng của bạn trong phần tài khoản của bạn và hơn thế nữa.<a href="/account/register"> Đăng ký</a> </p>
+    </div>
+
+    <!-- <h2>Bạn chưa có tài khoản, hãy đăng nhập</h2>
+    <form action="#" method="post" th:action="@{/register}" th:object="${user}">
+
+        <label for="tb_fullname">Họ và tên</label>
+        <input type="text" th:name="full_name" id="tb_fullname">
+
+        <label for="tb_email">Email</label>
+        <input type="text" th:name="email" id="tb_email">
+
+        <label for="tb_res_pass">Mật khẩu</label>
+        <input type="password" th:name="res_pass" id="tb_res_pass">
+
+        <label for="tb_verify_pass">Xác nhận mật khẩu</label>
+        <input type="password" th:name="verify_pass" id="tb_verify_pass">
+
+        <input type="submit" value="Đăng ký">
+    </form> -->
+
+
+</body>
+</html>

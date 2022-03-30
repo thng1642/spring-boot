@@ -1,0 +1,31 @@
+.nav-header {
+    position: relative;
+    width: 100%;
+    height: 60px;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    background-color: #FFE178;
+    align-items: center;
+
+    div {
+        position: relative;
+        width: calc(100% / 3);
+        height: 100%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        // border: 1px solid rgb(0, 0, 0);
+        
+        p {
+            margin-left: 10px;
+            font-size: 1.2rem;
+        }
+        i {
+            font-size: 1.5rem;
+        }
+        // p, i:hover {
+        //     cursor: pointer;
+        // }
+    }
+}  
