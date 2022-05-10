@@ -48,14 +48,17 @@
         <h2>Tạo tài khoản</h2>
         <form action="#" method="post" th:action="@{/register}" th:object="${user}">
 
-            <label for="tb_fullname">Họ và tên</label>
-            <input type="text" th:name="full_name" id="tb_fullname">
+            <label for="tb_firstname">Họ</label>
+            <input type="text" th:name="firstname" id="tb_firstname">
+
+            <label for="tb_lastname">Tên</label>
+            <input type="text" th:name="lastname" id="tb_lastname">
 
             <label for="tb_email">Email</label>
             <input type="text" th:name="email" id="tb_email">
 
             <label for="tb_res_pass">Mật khẩu</label>
-            <input type="password" th:name="res_pass" id="tb_res_pass">
+            <input type="password" th:name="password" id="tb_res_pass">
 
             <label for="tb_verify_pass">Xác nhận mật khẩu</label>
             <input type="password" th:name="verify_pass" id="tb_verify_pass">

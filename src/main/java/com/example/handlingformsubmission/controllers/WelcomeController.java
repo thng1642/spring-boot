@@ -2,9 +2,9 @@ package com.example.handlingformsubmission.controllers;
 
 import java.util.List;
 
-import com.example.handlingformsubmission.models.Account;
+//import com.example.handlingformsubmission.models.Account;
 // import com.example.handlingformsubmission.repository.AccountRepository;
-import com.example.handlingformsubmission.repository.CustomerRepository;
+//import com.example.handlingformsubmission.repository.CustomerRepository;
 import com.example.handlingformsubmission.repository.UserRepository;
 
 import org.springframework.beans.factory.annotation.Autowired;
@@ -26,30 +26,30 @@ public class WelcomeController {
 
     @GetMapping("/")
     public String main(){
-        return "home";
-    }
-
-    @GetMapping("/account/register")
-    public String accountRegister() {
         return "register";
     }
 
-    @PostMapping("/login")
-    public String checking(@RequestParam(value = "username") String username, @RequestParam(value = "pass") String pass, Model model) {
-        
-        if (username == null || pass == null) {
-            // message error
-            System.out.println("Error");
-            return "error";
-        }
-        
-        String data = repo.findPassword(username);
-        if (data.equals(pass)) {
-            Account account = new Account(username, pass);
-            model.addAttribute("account", account);
-            return "welcome";
-        }
-        else {  return "error"; }
-    }
+//    @GetMapping("/account/register")
+//    public String accountRegister() {
+//        return "register";
+//    }
+//
+//    @PostMapping("/login")
+//    public String checking(@RequestParam(value = "username") String username, @RequestParam(value = "pass") String pass, Model model) {
+//
+//        if (username == null || pass == null) {
+//            // message error
+//            System.out.println("Error");
+//            return "error";
+//        }
+//
+//        String data = repo.findPassword(username);
+//        if (data.equals(pass)) {
+//            Account account = new Account(username, pass);
+//            model.addAttribute("account", account);
+//            return "welcome";
+//        }
+//        else {  return "error"; }
+//    }
     
 }

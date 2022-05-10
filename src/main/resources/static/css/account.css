@@ -24,7 +24,7 @@
   font-size: 1.5rem;
 }
 
-.container-login {
+.container-login, .container-sign-up {
   margin-top: 100px;
   position: relative;
   width: 33.3333333333%;
@@ -36,31 +36,31 @@
   align-items: center;
   background-color: #F9F9F9;
 }
-.container-login p {
+.container-login p, .container-sign-up p {
   text-align: center;
   padding: 10px 40px;
   font-size: 1.1rem;
 }
-.container-login p a {
+.container-login p a, .container-sign-up p a {
   color: #088d30;
   text-decoration: none;
   font-weight: 700;
 }
-.container-login form {
+.container-login form, .container-sign-up form {
   width: 80%;
   position: relative;
   display: flex;
   flex-direction: column;
 }
-.container-login form label {
+.container-login form label, .container-sign-up form label {
   font-weight: 600;
   margin-bottom: 5px;
 }
-.container-login form input {
+.container-login form input, .container-sign-up form input {
   height: 40px;
   margin-bottom: 20px;
 }
-.container-login form input[type=submit] {
+.container-login form input[type=submit], .container-sign-up form input[type=submit] {
   margin-top: 20px;
   border: none;
   text-transform: uppercase;
@@ -70,9 +70,63 @@
   letter-spacing: 1.2px;
   transition: all 0.5s;
 }
-.container-login form input[type=submit]:hover {
+.container-login form input[type=submit]:hover, .container-sign-up form input[type=submit]:hover {
   cursor: pointer;
   background-color: #0a6099;
+}
+
+.footer {
+  margin-top: 100px;
+}
+.footer .top_footer {
+  height: 50px;
+  width: 100%;
+  position: relative;
+  background-color: #181938;
+  color: aliceblue;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-around;
+}
+.footer .top_footer .social-media {
+  display: flex;
+  justify-content: center;
+}
+.footer .top_footer .social-media i {
+  color: aliceblue;
+  margin-left: 20px;
+  font-size: 20px;
+}
+.footer .top_footer form {
+  position: relative;
+  height: 100%;
+  width: 30%;
+  display: flex;
+}
+.footer .top_footer form input[type=email] {
+  height: 100%;
+  border: none;
+  position: relative;
+  width: 75%;
+  background-color: #393A54;
+  color: aliceblue;
+  padding: 0px 10px;
+  font-size: 14px;
+}
+.footer .top_footer form input[type=submit] {
+  height: 100%;
+  width: inherit;
+  border: none;
+  position: relative;
+  background-color: #6BD918;
+  font-weight: 600;
+  font-size: 1.1rem;
+}
+.footer .bottom_footer {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
 }
 
 body {

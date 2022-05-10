@@ -7,7 +7,7 @@
 
     <script src="https://kit.fontawesome.com/dd9a768261.js" crossorigin="anonymous"></script>
     <link rel="stylesheet" th:href="@{/css/account.css}" href="../static/css/account.css">
-    <title>Tài khoản</title>
+    <title>Tài khoản (home.html)</title>
 </head>
 <body>
 
@@ -44,24 +44,72 @@
         <p>Bằng cách tạo một tài khoản với cửa hàng của chúng tôi, bạn có thể thao tác quy trình thanh toán nhanh hơn, lưu trữ nhiều địa chỉ giao hàng, xem và theo dõi các đơn hàng của bạn trong phần tài khoản của bạn và hơn thế nữa.<a href="/account/register"> Đăng ký</a> </p>
     </div>
 
-    <!-- <h2>Bạn chưa có tài khoản, hãy đăng nhập</h2>
-    <form action="#" method="post" th:action="@{/register}" th:object="${user}">
+    <div class="footer">
 
-        <label for="tb_fullname">Họ và tên</label>
-        <input type="text" th:name="full_name" id="tb_fullname">
+        <div class="top_footer">
 
-        <label for="tb_email">Email</label>
-        <input type="text" th:name="email" id="tb_email">
+            <div class="social-media">
+                <div>JOIN THE CONVERSATION</div>
+                
+                <a href="http://facebook.com">
+                    <i class="fa-brands fa-facebook"></i>
+                </a>
+                
+                <a href="http://youtebe.com">
+                    <i class="fa-brands fa-youtube"></i>
+                </a>
+                
+                <a href="http://instagram.com">
+                    <i class="fa-brands fa-instagram"></i>
+                </a>
+            
+            </div>
+        
+            <form action="" method="post">
+                <input type="email" name="input_email" id="tb_email" placeholder="Nhập email để nhận thông tin khuyến mãi">
+                <input type="submit" value="Đăng ký">
+            </form>
+        </div>
 
-        <label for="tb_res_pass">Mật khẩu</label>
-        <input type="password" th:name="res_pass" id="tb_res_pass">
+        <div class="bottom_footer">
+            <div class="about_shop">
+                <h4>Về shop</h4>
+                
+                <ul>
+                    <li><a href="#">Giới thiệu</a></li>
+                    <li><a href="#">Hệ thống cửa hàng</a></li>
+                    <li><a href="#">Thông tin liên hệ</a></li>
+                </ul>
+            </div>
 
-        <label for="tb_verify_pass">Xác nhận mật khẩu</label>
-        <input type="password" th:name="verify_pass" id="tb_verify_pass">
+            <div class="support_customer">
+                <h4>Hỗ trợ khách hàng</h4>
+                
+                <ul>
+                    <li><a href="http://">Chính sách giao hàng</a></li>
+                    <li><a href="#" >Hướng dẫn chọn size</a></li>
+                    <li><a href="#" >Chính sách đổi trả hàng</a></li>
+                    <li><a href="http://">Chính sách trả góp</a></li>
+                    <li><a href="http://">Các điều khoản và điều kiện</a></li>
+                    <li><a href="http://">Chính sách bảo mật</a></li>
+                </ul>
+            </div>
 
-        <input type="submit" value="Đăng ký">
-    </form> -->
+            <div class="group_business">
+                <h4>Group business</h4>
 
+                <ul>
+                    <li><a href="http://">Nguyễn Kim</a></li>
+                    <li><a href="#" >Big C</a></li>
+                    <li><a href="http://">Cross Vietname</a></li>
+                </ul>
+            </div>
+
+            <div class="pay_method">
+                <h4>Phương thức thanh toán</h4>
+            </div>
+        </div>
+    </div>
 
 </body>
 </html>
